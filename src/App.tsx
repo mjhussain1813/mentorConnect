@@ -1,9 +1,8 @@
-import './App.css';
-import AppRouter from './route/AppRouter';
+import React from 'react';
+import AppRouter from './routes/AppRouter';
 
 
 function App() {
-  
   return (
     <AppRouter/>
   );
