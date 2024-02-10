@@ -1,7 +1,9 @@
 import React from 'react';
 import Logo from '../images/codepal.png';
+import { useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
+  const history= useNavigate()
   return (
     <div className='flex items-center w-full'>
     <nav className='flex justify-between items-center w-full'>
@@ -14,7 +16,7 @@ export const Navbar = () => {
             <li className='p-3  hover:bg-neutral-950 hover:text-white'>Contact</li>
         </ul>
         </div>
-        <button className='px-3 py-2 font-semibold bg-neutral-950 text-white'>Join now</button>
+        <button className=' top-40 left-1100 w-153 h-16 mr-20 px-8 border-0  rounded-md bg-black text-white text-20 font-roboto font-semibold '  onClick={()=>history('/auth/login')}>Join now</button>
     </nav>
     </div>
   )
